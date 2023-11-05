@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Modulo_API.Controllers
 {
-    [ApiController]
+    
     [Route("[controller]")]
     public class UsuarioController : ControllerBase
     {
         
-        [HttpGet]
+        [HttpGet("ObterDataHoraAtual")]
         public IActionResult ObterDataHora()
         {
             var obj = new
@@ -20,6 +20,14 @@ namespace Modulo_API.Controllers
                 Hora = DateTime.Now.ToShortTimeString()
             };
             return Ok(obj);
+        }
+
+        [HttpGet("ApresentarUsuario")]
+        public IActionResult ApresentarUsuario(string nome)
+        {
+            var mensagem = $"Olá, {nome}, seja bem vindo!";
+            return Ok(mensagem);
+            
         }
     }
 }
