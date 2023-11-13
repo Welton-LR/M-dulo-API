@@ -5,7 +5,7 @@
 namespace Modulo_API.Migrations
 {
     /// <inheritdoc />
-    public partial class CriacaoTabelaContato : Migration
+    public partial class MinhaTabelaContato : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

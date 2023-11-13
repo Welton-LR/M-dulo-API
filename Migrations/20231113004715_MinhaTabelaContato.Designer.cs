@@ -11,8 +11,8 @@ using Modulo_API.Context;
 namespace Modulo_API.Migrations
 {
     [DbContext(typeof(AgendaContext))]
-    [Migration("20231107000609_CriacaoTabelaContato")]
-    partial class CriacaoTabelaContato
+    [Migration("20231113004715_MinhaTabelaContato")]
+    partial class MinhaTabelaContato
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
